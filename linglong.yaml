@@ -1,0 +1,44 @@
+package:
+  id: kglobalaccel
+  name: kglobalaccel
+  version: 5.54.0
+  kind: lib
+  discription: |
+    kglobalaccel.
+
+base:
+  id: org.deepin.base
+  version: 20.5.0
+
+#pkg-kde-tools graphviz kconfig kcoreaddons kcrash kdbusaddons kservice kwendowssystem
+depends:
+- id: qtbase
+  version: 5.11.3.15
+- id: qttools
+  version: 5.11.3
+- id: qtx11extras
+  version: 5.11.3
+- id: ki18n
+  version: 5.54.0
+- id: kconfig
+  version: 5.54.0
+- id: kwindowsystem
+  version: 5.54.0
+- id: kcoreaddons
+  version: 5.54.0
+- id: kdbusaddons
+  version: 5.54.0
+- id: kcrash
+  version: 5.54.0
+- id: kservice
+  version: 5.54.0
+
+source:
+  kind: git
+  url: https://github.com/deepin-community/kglobalaccel.git
+  version: master
+  commit: 3fef7f7cad831665826d378524116941c619e583
+
+  patch: []
+build:
+  kind: cmake
